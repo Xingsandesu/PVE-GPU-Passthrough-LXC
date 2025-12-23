@@ -19,8 +19,10 @@ Proxmox VE NVIDIA GPU 直通到 LXC 容器的自动化配置工具。
 
 ```bash
 git clone https://github.com/Xingsandesu/PVE-GPU-Passthrough-LXC.git
+```
+```bash
 cd PVE-GPU-Passthrough-LXC
-
+```
 ## 系统要求
 
 - Proxmox VE 9.1环境
@@ -32,8 +34,7 @@ cd PVE-GPU-Passthrough-LXC
 ### 1. 系统初始化
 
 更新系统包：
-
-```bash
+```
 apt update
 ```
 
@@ -145,8 +146,6 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/Proxmo
 
 ```bash
 # 克隆仓库并安装脚本
-git clone https://github.com/Xingsandesu/PVE-GPU-Passthrough-LXC.git
-cd pve-gpu-passthrough
 sudo cp configure-gpu-passthrough /usr/bin/configure-gpu-passthrough
 sudo chmod +x /usr/bin/configure-gpu-passthrough
 ```
